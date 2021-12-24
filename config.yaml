@@ -1,0 +1,15 @@
+app: # 应用基本配置
+  env: local # 环境名称
+  port: 9797 # 服务监听端口号
+  app_name: ApiForCode # 应用名称
+  app_url: http://localhost # 应用域名
+log: # 日志信息配置
+  level: info # 日志等级
+  root_dir: ./storage/logs # 日志根目录
+  filename: app.log # 日志文件名称
+  format: # 写入格式 可选json
+  show_line: true # 是否显示调用行
+  max_backups: 3 # 旧文件的最大个数
+  max_size: 500 # 日志文件最大大小（MB）
+  max_age: 28 # 旧文件的最大保留天数
+  compress: true # 是否压缩
